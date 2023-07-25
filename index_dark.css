@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #0b0c10;
+    color: white;
+}
+#light_dark{
+    border-radius: 7px;
+    padding: 6px 20px;
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+}
+#light_dark:hover{
+    background-color: rgb(209, 233, 255)
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12vw;
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+
+.tab_con{
+    
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+}
+.tab_con div{
+    border-radius: 8px;
+    padding: 10px 2vw;
+    cursor: pointer;
+    text-align: center;
+    width: 150px;
+    padding: 10px 0;
+    text-shadow: 0 0 4px black;
+}
+.tab_con div:hover{
+    box-shadow: 0 0 10px -4px white;
+}
+
+.weather_con{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* weather_info_Con */
+.weather_con{
+    margin-top: 30px;
+}
+
+.error_con{
+    display: none;
+}
+.weather_info_con{
+    display: none;
+}
+.loading_con{
+    display: none;
+}
+.loading_con{
+    display: none;
+}
+.city_name_con{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.city_name_con img{
+    padding: 16px 8px;
+   
+}
+#weather_desc{
+    color:rgb(99, 99, 99);
+    text-transform: capitalize;
+    font-size: 30px;
+}
+#temp{
+    margin-block: 10px;
+    font-size: 50px;
+}
+.card_con{
+    margin-top: 40px;
+    gap: 4vw;
+    padding-inline: 20px;
+    display: flex;
+    justify-content: center;
+}
+.parameter{
+    box-shadow: 0 0 10px 0px #4bcacc85;
+    width: 200px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.para_desc{
+    color: rgb(99, 99, 99);
+}
+.val{
+    color: white;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+
+.grant_loc_con p{
+    margin-block: 10px;
+}
+#grant_access_btn{
+    margin-top: 10px;
+    background-color:#4bcacc5a;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 100;
+    padding: 10px 40px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 0 10px -6px black;
+}
+#grant_access_btn:hover{
+    background-color:#4bcacc85;
+}
+/* form_con */
+.form_con{
+    display: none;
+    margin-bottom: 30px;
+}
+#inp_city{
+    margin-right: 10px;
+    background-color:#4bcacc2e;
+    box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.984);
+    border: none;
+    width: 29vw;
+    vertical-align: middle; 
+    font-size: 20px;
+    padding: 5px 10px; 
+    border-radius: 10px;
+}
+#inp_city:hover{
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.134);
+}
+#inp_city:focus{
+    background-color:#4bcacc3f;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.583);
+}
+
+.form_con button{
+    /* padding-top: 4px;
+    padding: 5px 5px; */
+    border: none;
+    background-color: #4bcacc5a;
+    height: 36px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.267);
+    box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.984);
+    width: 40px;
+    vertical-align: middle;
+    cursor: pointer; 
+}
+#search_img{
+    mix-blend-mode:color-dodge
+}
+.form_con button:hover{
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.267);
+}
+
+
+

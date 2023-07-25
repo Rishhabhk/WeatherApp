@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <link id="css_light" rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <h1 id="heading">Weather App</h1>
+            <span id="light_dark">Dark Mode</span>
+        </div>
+        <div class="tab_con">
+            <div class="your_weather">Your Weather</div>
+            <div class="search_weather">Search Weather</div>
+        </div>
+
+        <div class="weather_con">
+
+
+            <!-- grant log -->
+            <div class="grant_loc_con">
+                <img src="/images/location.gif" alt="" width="180" height="180" loading="lazy" id="location_img">
+                <h2>Grant Location Access</h2>
+                <p>Allow access to get weather information</p>
+                <button id="grant_access_btn">Grant Access</button>
+            </div>
+
+            <!-- search_form -->
+            <form action="#" class="form_con">
+                <input type="text" name="inp_city" id="inp_city" placeholder="Search City">
+                <button type="submit">
+                    <img src="/images/search.png" alt="" width="20" height="20" loading="lazy" id="search_img">
+                </button>
+            </form>
+
+            <!-- loading_screen -->
+            <div class="loading_con">
+                <img src="/images/loading.gif" alt="" width="150" height="150" id="loading_img">
+                <p>Loading...</p>
+            </div>
+
+            <!-- error page -->
+            <div class="error_con">
+                <img src="/images/error.gif" width="200" height="200" alt="" id="error_img">
+                <h2>Error!  No result Found</h2>
+            </div>
+
+            <!-- show_Weather_info -->
+            <div class="weather_info_con">
+                <div class="city_name_con">
+                    <p id="city_name">Jhansi</p>
+                    <img src="" alt="" width="35" height="25" id="country_icon"> <!--country img -->
+                </div>
+                <p id="weather_desc">Haze</p>
+                <img src="" alt="" width="75" height="75" id="weather_desc_icon"> <!--weather desc img -->
+                <p id="temp"></p>
+                
+                <!-- cards -->
+                <div class="card_con">
+                    <div class="parameter">
+                        <img src="/images/wind.gif" alt="" width="75" height="75" id="wind_img">
+                        <p class="para_desc">Windspeed</p>
+                        <p class="val" id="wind_speed_val">123 m/s</p>
+                    </div>
+                    <div class="parameter">
+                        <img src="/images/humidity.gif" alt=""  width="75" height="75" id="humidity_img">
+                        <p class="para_desc">Humidity</p>
+                        <p class="val" id="humidity_val">343</p>
+                    </div>
+                    <div class="parameter">
+                        <img src="/images/cloud.gif" alt=""  width="75" height="75" id="cloud_img">
+                        <p class="para_desc">Clouds</p>
+                        <p class="val" id="cloud_val">123</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+</html>
